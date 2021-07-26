@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h5>Index : {{ id }}</h5>
+        <p>Last Hash : {{block.last_hash}}</p>
+        <p>Current Hash : {{block.hash}}</p>
+        <p>Difficulty : {{block.difficulty}}</p>
+        <p>Nonce : {{block.nonce}}</p>
+        <p>Date : {{ timestampdate }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-transaction
+        *ngFor="let transactionEl of block.data; let i = index"
+        [transaction]="transactionEl"
+        [index]="i"></app-transaction>
+    </div>
+</div>

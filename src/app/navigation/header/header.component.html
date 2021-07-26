@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+      <button
+          mat-icon-button
+          (click)="onToggleSidenav()">
+      </button>
+  </div>
+  <div><a routerLink="/">Blockchain App</a></div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="/blockchain">Blockchain</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/transact">Transact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/wallet">Wallet</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="/transaction-pool">Transaction Pool</a>
+        </li>
+    </ul>      
+  </div>
+
+    
+</mat-toolbar>

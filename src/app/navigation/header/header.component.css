@@ -1,0 +1,28 @@
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:active {
+    color: lightgray
+}
+
+.navigation-items {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav-item {
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.nav-captions {
+    display: inline-block;
+    padding-left: 6px;
+}
+

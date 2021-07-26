@@ -1,0 +1,49 @@
+<!-- {
+    "data": [
+        {
+            "id": "387dfbe8",
+            "input": {
+                "address": "cf3d8d06",
+                "amount": 1000,
+                "public_key": "-----BEGIN PUBLIC KEY-----\nMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAESS+cFe0fyCZ2pFQW7BCMU+Ctt/qOM3vY\nf6stpoItIkuEYkdo4DoZp4aNWCkR7QjGpOD0fP9wavw0FFg5yKEbEg==\n-----END PUBLIC KEY-----\n",
+                "signature": [
+                    24790383840363210821874970513985785363293683224119305224720045797326937798702,
+                    43510546093659902850802971527885425152019999728762107689108997919504563979710
+                ],
+                "timestamp": 1626624371.5078003
+            },
+            "output": {
+                "bar": 50,
+                "cf3d8d06": 800,
+                "foo": 140,
+                "test": 10
+            }
+        },
+        {
+            "id": "dbae940c",
+            "input": {
+                "address": "*--official-mining-reward--*"
+            },
+            "output": {
+                "cf3d8d06": 50
+            }
+        }
+    ],
+    "difficulty": 4,
+    "hash": "00a26cb1e796fb2711e701690a47e600141b1aad771cbae085f680155935ff71",
+    "last_hash": "genesis_hash",
+    "nonce": 22,
+    "timestamp": 1626624399.9997349
+} -->
+
+<div class="row">
+    <div class="col-xs-12">
+        <h5>Timestamp : {{ block.timestamp }}</h5>
+        <p>Last Hash : {{block.last_hash}}</p>
+        <p>Current Hash : {{block.hash}}</p>
+        <p>Difficulty : {{block.difficulty}}</p>
+        <p>Nonce : {{block.nonce}}</p>
+    </div>
+</div>
+
+

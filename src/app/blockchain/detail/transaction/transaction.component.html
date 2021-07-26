@@ -1,0 +1,10 @@
+<div class="pull-left">
+    <h4 class="list-group-item-heading">Transaction ID : {{ transaction.id }}</h4>
+    <p class="list-group-item-text">From : {{ transaction.input.address }}</p>
+    <div *ngFor="let item of trans_key; let i = index">
+      <p class="list-group-item-text">To : {{ item }}</p>
+      <p class="list-group-item-text">Amount : {{ trans_value[i] }}</p>
+      <br>
+    </div>
+
+</div>

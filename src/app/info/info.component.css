@@ -1,0 +1,19 @@
+
+.container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+}

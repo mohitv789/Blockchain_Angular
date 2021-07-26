@@ -1,0 +1,35 @@
+#image_logo {
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 50%;
+    justify-content: center;
+    text-align: center;
+    background-color: darkgray;
+    color: white;
+}
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+  }
+
+  .container {
+  margin-top: 30px;
+  }
+
+  .router {
+    margin : 20px;
+    padding : 10px;
+  }
+  

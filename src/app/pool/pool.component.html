@@ -1,0 +1,20 @@
+<button color="light-blue" class="btn btn-primary" (click)="mineBlock()">Mine Block</button>
+<br>
+<button color="light-blue" class="btn btn-primary" (click)="showPool()">Show Pool</button>
+<div *ngIf="showpool == true">
+  <div class="col-md-12">
+      <p>ID: {{ receipt.id }}</p>
+      <p>Input Address: {{ receipt.address }}</p>
+      <p>Input Amount: {{ receipt.amount }}</p>
+      <p>Input Public Key: {{ receipt.public_key }}</p>
+      <p>Input Timestamp: {{ receipt.timestamp }}</p>
+      <div *ngFor="let sign of receipt.signature; let i = index">
+          <p>Signature {{i}} : {{ sign }}</p>
+      </div>
+      <div *ngFor="let item of receipt.output | keyvalue">
+          Wallet Address: {{item.key}} | Amount: {{item.value}}
+      </div>
+  </div>
+</div>
+<br><br>
+<app-mining *ngIf="minedblock" [block]="block"></app-mining>

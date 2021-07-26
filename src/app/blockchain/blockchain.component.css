@@ -1,0 +1,16 @@
+.item {
+    border: 1px solid solid black;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    background-color: gray;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+}
