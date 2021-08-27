@@ -8,13 +8,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   title = 'frontend';
-  path_logo = './assets/logo.png';
+  path_logo = './assets/logo.jpg';
 
 
   constructor() {}
 
   ngOnInit() {
-    
+
   }
 
 
